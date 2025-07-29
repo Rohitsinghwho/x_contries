@@ -33,7 +33,7 @@ const App = () => {
       fetch(API)
       .then((res)=>res.json())
       .then((res)=>setData(res))
-      .catch(err=>console.log("Error fetching data: ",err))
+      .catch(err=>console.log("Error fetching data:",err))
   },[])
   return (
     <div
