@@ -1,14 +1,5 @@
 import { useEffect, useState } from "react";
 
-const Card = ({ name, flag }) => {
-  return (
-    <div className="countryCard">
-      <img src={flag} alt={name} style={{ width: "70px", height: "70px" }} />
-      <h3 style={{ textAlign: "center" }}>{name}</h3>
-    </div>
-  );
-};
-
 const API =
   "https://countries-search-data-prod-812920491762.asia-south1.run.app/countries";
 
@@ -82,7 +73,7 @@ const App = () => {
                 alt={common}
                 style={{ width: "70px", height: "70px" }}
               />
-              <h3 style={{ textAlign: "center" }}>{common}</h3>
+              <h2 style={{ textAlign: "center" }}>{common}</h2>
             </div>
           ))
         )}
